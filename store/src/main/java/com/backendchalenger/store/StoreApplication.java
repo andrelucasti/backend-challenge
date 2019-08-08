@@ -1,12 +1,13 @@
-package com.invillia.acme;
+package com.backendchalenger.store;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InvilliaApplication {
+public class StoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InvilliaApplication.class, args);
+		SpringApplication.run(StoreApplication.class, args);
 	}
+
 }
