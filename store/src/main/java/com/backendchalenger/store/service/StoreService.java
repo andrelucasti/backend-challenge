@@ -20,6 +20,9 @@ public class StoreService {
         if(StringUtils.isBlank(store.getName()) || StringUtils.isEmpty(store.getName())){
             throw  new StoreInvalidException("The name of store can not be empty or null or blank");
         }
+        if(StringUtils.isBlank(store.getAddress()) || StringUtils.isEmpty(store.getAddress())){
+            throw  new StoreInvalidException("The address of store can not be empty or null or blank");
+        }
 
         this.storeRepository.save(store);
     }
